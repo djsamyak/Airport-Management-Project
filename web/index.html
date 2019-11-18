@@ -1,4 +1,3 @@
-
 <html>
 <head>
 	<title>Flight Ticket Booking</title>
@@ -24,7 +23,7 @@
 					<div class="tab-1 resp-tab-content oneway">
 						<form action="#" method="post">
 							<div class="from">
-								<h3>From</h3>
+								<h3>Departure:</h3>
 								<select id = "city1">
 									<option value = NULL>--select--</option>
  							              <option value = "1">Narela (VNIA)</option>
@@ -36,7 +35,7 @@
     							           </select>
 							</div>
 							<div class="to">
-								<h3>To</h3>
+								<h3>Arrival:</h3>
 								<select id = "city2">
 									<option value = NULL>--select--</option>
  							              <option value = "1">Narela (VNIA)</option>
@@ -105,7 +104,6 @@
 										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
 										divUpd.text(newVal);
 									});
-
 									$('.value-minus').on('click', function(){
 										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
 										if(newVal>=1) divUpd.text(newVal);
@@ -129,8 +127,5 @@
 	});
 </script>
 <!-- //load-more -->
-
-
-
 </body>
 </html>
